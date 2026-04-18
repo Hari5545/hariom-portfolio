@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hariom Chauhan — CS Student & Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== LOADER ========== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-bar"></div>
+      <span class="loader-text">INITIALIZING<span class="loader-dots">...</span></span>
+    </div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <header id="navbar">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">[</span>HC<span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-sun" id="theme-icon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#education" class="mobile-link">Education</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#achievements" class="mobile-link">Achievements</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <!-- Background grid -->
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+
+    <div class="hero-content reveal">
+      <p class="hero-label"><span class="blink-dot"></span> Available for opportunities</p>
+      <h1 class="hero-name">
+        <span class="name-first">Hariom</span>
+        <span class="name-last">Chauhan</span>
+      </h1>
+      <div class="hero-title-wrap">
+        <span class="hero-static">B.Tech Computer Science Student</span>
+      </div>
+      <p class="hero-tagline">
+        <span id="typed-text"></span><span class="cursor-blink">|</span>
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-code"></i> View Projects
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-paper-plane"></i> Contact Me
+        </a>
+      </div>
+      <!-- Floating stats -->
+      <div class="hero-stats">
+        <div class="stat-pill">
+          <span class="stat-num">300+</span>
+          <span class="stat-label">LeetCode</span>
+        </div>
+        <div class="stat-pill">
+          <span class="stat-num">200+</span>
+          <span class="stat-label">CodeChef</span>
+        </div>
+        <div class="stat-pill">
+          <span class="stat-num">3rd</span>
+          <span class="stat-label">Hackathon</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span class="t-dot red"></span>
+          <span class="t-dot yellow"></span>
+          <span class="t-dot green"></span>
+          <span class="t-title">hariom@portfolio:~</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></p>
+          <p class="t-output">Hariom Chauhan — CS Student & Developer</p>
+          <p><span class="t-prompt">$</span> <span class="t-cmd">cat skills.txt</span></p>
+          <p class="t-output">Python · Java · C++ · JavaScript</p>
+          <p class="t-output">React · FastAPI · TensorFlow · LangChain</p>
+          <p><span class="t-prompt">$</span> <span class="t-cmd">cat interests.txt</span></p>
+          <p class="t-output">AI/ML · Web Dev · Problem Solving · DSA</p>
+          <p><span class="t-prompt">$</span> <span class="t-cursor-line">█</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">01 / About</span>
+        <h2 class="section-title">Who Am I?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="about-intro">
+            I'm a <strong>Computer Science student</strong> at Noida Institute of Engineering and Technology, driven by a deep passion for building intelligent systems and elegant web experiences.
+          </p>
+          <p class="about-body">
+            My journey spans across <strong>AI-powered applications</strong>, full-stack web development, and competitive programming. I love the intersection of machine learning and real-world problem solving — whether it's converting natural language to SQL or detecting diseases from medical images.
+          </p>
+          <p class="about-body">
+            When I'm not writing code, you'll find me grinding DSA problems on LeetCode and GFG, participating in hackathons, or exploring the latest breakthroughs in large language models.
+          </p>
+          <div class="about-badges">
+            <span class="badge"><i class="fas fa-map-marker-alt"></i> Greater Noida, India</span>
+            <span class="badge"><i class="fas fa-graduation-cap"></i> B.Tech CSE</span>
+            <span class="badge"><i class="fas fa-robot"></i> AI Enthusiast</span>
+          </div>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-card-inner">
+            <div class="about-avatar">HC</div>
+            <div class="about-info">
+              <p><span class="info-label">Name</span><span class="info-value">Hariom Chauhan</span></p>
+              <p><span class="info-label">Degree</span><span class="info-value">B.Tech CSE</span></p>
+              <p><span class="info-label">College</span><span class="info-value">NIET, Greater Noida</span></p>
+              <p><span class="info-label">Year</span><span class="info-value">2022 – Present</span></p>
+              <p><span class="info-label">Focus</span><span class="info-value">AI + Web Dev</span></p>
+            </div>
+            <a href="mailto:hariom06065@gmail.com" class="btn btn-primary btn-sm">
+              <i class="fas fa-envelope"></i> Get In Touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">02 / Education</span>
+        <h2 class="section-title">Academic Journey</h2>
+      </div>
+      <div class="timeline">
+        <!-- Item 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tcard-header">
+              <span class="tcard-year">2022 – Present</span>
+              <span class="tcard-badge current">Current</span>
+            </div>
+            <h3 class="tcard-title">B.Tech — Computer Science & Engineering</h3>
+            <p class="tcard-institution">
+              <i class="fas fa-university"></i> Noida Institute of Engineering and Technology (NIET)
+            </p>
+            <p class="tcard-detail">Greater Noida, Uttar Pradesh</p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tcard-header">
+              <span class="tcard-year">Intermediate (12th)</span>
+              <span class="tcard-score">76%</span>
+            </div>
+            <h3 class="tcard-title">Saraswati Vidya Mandir Inter College</h3>
+            <p class="tcard-detail">PCM with Computer Science</p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tcard-header">
+              <span class="tcard-year">High School (10th)</span>
+              <span class="tcard-score">70%</span>
+            </div>
+            <h3 class="tcard-title">A N D Inter College</h3>
+            <p class="tcard-detail">Foundation in Science & Mathematics</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">03 / Projects</span>
+        <h2 class="section-title">Things I've Built</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon-wrap">
+              <i class="fas fa-database project-icon"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="Live" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">LLM Powered SQL Assistant</h3>
+          <p class="project-desc">Converts natural language queries into SQL using Mistral 7B with RAG pipeline and semantic embeddings. Supports complex joins and aggregations from plain English.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">LangChain</span>
+            <span class="tech-tag">PostgreSQL</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon-wrap">
+              <i class="fas fa-brain project-icon"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="Live" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Medical Image Classification</h3>
+          <p class="project-desc">Detects diseases from MRI and X-ray images using CNN deep learning models with Grad-CAM visualization for explainability. Supports multiple disease categories.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">CNN</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon-wrap">
+              <i class="fas fa-graduation-cap project-icon"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" aria-label="GitHub" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="Live" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Academease</h3>
+          <p class="project-desc">Full-stack academic platform featuring notes sharing, attendance tracking with visual charts, and an opportunities board for internships and events.</p>
+          <div class="project-tech">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Tailwind</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Node.js</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">04 / Skills</span>
+        <h2 class="section-title">Tech Stack</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-code skill-cat-icon"></i>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Java</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">C++</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="82"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-globe skill-cat-icon"></i>
+            <h3>Web & Frameworks</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">React</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">HTML / CSS</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="92"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Tailwind</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Bootstrap</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-microchip skill-cat-icon"></i>
+            <h3>CS Core</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag-pill">Operating Systems</span>
+            <span class="skill-tag-pill">DBMS</span>
+            <span class="skill-tag-pill">DSA</span>
+            <span class="skill-tag-pill">OOP</span>
+            <span class="skill-tag-pill">Computer Networks</span>
+            <span class="skill-tag-pill">Algorithms</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ACHIEVEMENTS ========== -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">05 / Achievements</span>
+        <h2 class="section-title">Milestones</h2>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card reveal">
+          <div class="ach-icon"><i class="fas fa-trophy"></i></div>
+          <div class="ach-content">
+            <h3 class="ach-title">3rd Place — Hack-Xtension</h3>
+            <p class="ach-desc">Secured 3rd position in the Hack-Xtension Hackathon, competing with 100+ teams on real-world problem statements.</p>
+          </div>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="ach-icon"><i class="fas fa-code-branch"></i></div>
+          <div class="ach-content">
+            <h3 class="ach-title">200+ Problems on CodeChef</h3>
+            <p class="ach-desc">Consistently solved competitive programming problems on CodeChef, sharpening algorithmic thinking and speed.</p>
+          </div>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="ach-icon"><i class="fas fa-fire"></i></div>
+          <div class="ach-content">
+            <h3 class="ach-title">300+ Problems on LeetCode & GFG</h3>
+            <p class="ach-desc">Solved 300+ problems across LeetCode and GeeksforGeeks, covering arrays, trees, graphs, DP, and more.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">06 / Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-sub">Have a project in mind or want to collaborate? Drop a message below.</p>
+      </div>
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <div class="contact-icon-wrap"><i class="fas fa-phone"></i></div>
+            <div>
+              <p class="contact-label">Phone</p>
+              <a href="tel:+918810851557" class="contact-value">+91-8810851557</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-wrap"><i class="fas fa-envelope"></i></div>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:hariom06065@gmail.com" class="contact-value">hariom06065@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <p class="contact-label">Location</p>
+              <span class="contact-value">Greater Noida, India</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://leetcode.com/" target="_blank" rel="noopener" class="social-btn" aria-label="LeetCode">
+              <i class="fas fa-laptop-code"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Form -->
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="What's this about?" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-success" id="form-success">Message sent! I'll get back to you soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">[HC]</span>
+      <p class="footer-copy">&copy; 2024 Hariom Chauhan. Crafted with <i class="fas fa-heart"></i> & lots of coffee.</p>
+      <div class="footer-links">
+        <a href="#hero">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button id="scroll-top" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
